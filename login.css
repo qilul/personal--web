@@ -1,0 +1,70 @@
+/* Reset margin dan padding untuk semua elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+/* Gaya dasar untuk halaman */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+  
+/* Gaya untuk wadah form login */
+.login-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+  
+/* Gaya untuk judul (h2) */
+h2 {
+    margin-bottom: 20px;
+}
+  
+/* Gaya untuk label form */
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+  
+/* Gaya untuk input */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+  
+/* Gaya untuk tombol */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+/* Gaya tombol saat dihover */
+button:hover {
+    background-color: #0056b3;
+}
+  
+/* Gaya untuk pesan error */
+.error-message {
+    color: red;
+    margin-top: 10px;
+}

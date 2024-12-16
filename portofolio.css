@@ -1,0 +1,55 @@
+.menu{
+    width: max-content;
+    list-style-position: outside;
+}
+
+.menu p{
+    background-color: lightgreen;
+    display: flex;
+    width: 100px;
+    padding: 10px;
+    font-size: 25px;
+    gap: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.menu p span{
+    transform: rotate(90deg);
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+ul{
+    position: absolute;
+    width: 150px;
+    background-color: lightskyblue;
+    list-style-type: none;
+    text-align: left;
+    transition: all .3s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+li a{
+
+display: flex;
+color: white;
+padding: 10px 0px 10px 20px;
+font-size: 20px;
+text-decoration: none;
+box-sizing: border-box;
+transition: all .3s;
+
+}
+
+.menu p:hover ~ ul, ul:hover {
+    opacity: 1;
+    visibility: visible;
+}
+
+a:hover {
+background-color: lightpink;
+color: grey;
+
+}

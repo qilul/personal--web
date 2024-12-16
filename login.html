@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <!-- Menyambungkan file CSS untuk gaya tampilan -->
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <!-- Form login dengan ID untuk memudahkan akses dari JavaScript -->
+    <form id="loginForm">
+      <!-- Label dan input untuk username dengan atribut "required" (wajib diisi) -->
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      
+      <!-- Label dan input untuk password dengan atribut "required" (wajib diisi) -->
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      
+      <!-- Tombol untuk memicu fungsi login saat diklik -->
+      <button type="button" onclick="login()">Login</button>
+      <!-- Area pesan error untuk menampilkan pesan jika login gagal -->
+      <p id="errorMessage" class="error-message"></p>
+    </form>
+  </div>
+  <!-- Menyambungkan file JavaScript untuk fungsi login -->
+  <script src="login.js"></script>
+</body>
+</html>

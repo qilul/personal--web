@@ -1,0 +1,161 @@
+body {
+  background-color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+
+.container {
+  display: flex;
+  gap: 25px;
+ margin-bottom: 25px;
+ margin-top: 10%;
+}
+
+.cont{
+  display: flex;
+  gap: 25px;
+  
+}
+
+.item {
+  background: gray;
+  width: 170px;
+  height: 170px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 1px 2px 5px 0;
+  transition: 300ms ease-in-out;
+}
+
+.container:hover> :not(:hover) {
+  opacity: .3;
+}
+
+.cont:hover> :not(:hover) {
+  opacity: .3;
+}
+
+
+.item img {
+  position: relative;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container-2 {
+  margin-top: 5%;
+}
+
+.container-1 {
+  margin-top: 15%;
+}
+
+.main {
+  position: absolute;
+  top: 10%;
+  left: 33%;
+  font-size: 50px;
+  font-family: 'Courier New', Courier, monospace;
+
+}
+
+h1 {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 5px;
+  background: linear-gradient(90deg, green, skyblue, green);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 4s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position-x: -500%;
+  }
+
+  100% {
+    background-position-x: 500%;
+  }
+}
+
+nav {
+
+  text-indent: normal;
+  text-align: left;
+  margin: 5px 5px 5px 5px;
+
+}
+
+
+.nav button {
+
+  border-radius: 20px;
+  background-color: whitesmoke;
+  width: 25%;
+  height: 50%;
+  gap: 10px;
+
+}
+
+.content button {
+
+  position: absolute;
+  left: 20%;
+  top: 30%;
+  width: 20%;
+  height: 40%;
+
+}
+
+.highlight button {
+
+  width: 20%;
+  height: 40%;
+  position: absolute;
+  left: 41%;
+  top: 30%;
+
+}
+
+.featured button {
+
+  width: 20%;
+  height: 40%;
+  position: absolute;
+  left: 62%;
+  top: 30%;
+
+
+}
+
+.featured img {
+
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+img {
+
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+
+p {
+  text-align: justify;
+  font-size: 15px;
+  margin: 10px 10px 10px 10px;
+  letter-spacing: normal;
+  word-spacing: 0px;
+}

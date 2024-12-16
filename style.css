@@ -1,0 +1,113 @@
+body {
+        background-color: white;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.top {
+        position: absolute;
+        left: 53%;
+        top: 17%;
+
+}
+
+.nav {
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 0%;
+        gap: 35px;
+        padding-right: 150px;
+        color: white;
+        font-weight: bolder;
+        font-size: 30px;
+        font-family: 'Times New Roman', Times, serif;
+        height: 10%;
+        width: 100%;
+        border-radius: 10px;
+        background-color: green;
+        box-sizing: border-box;
+        -webkit-web-shadow: black;
+        -moz-box-shadow: black;
+        box-shadow: 0px 17px 59px 11px lightgreen;
+}
+
+.content {
+
+        position: absolute;
+        left: 9%;
+        top: 6px;
+        color: white;
+        font-size: 30px;
+}
+
+.left-content {
+        position: absolute;
+        left: 10%;
+        top: 26%;
+        font-size: 25px;
+        line-height: 20px;
+        color: darkslategray;
+
+
+}
+
+.visible {
+
+        position: absolute;
+        left: 10%;
+        top: 43%;
+        font-size: 25px;
+        margin-top: 10px;
+}
+
+
+.row ul {
+        justify-content: flex-start;
+        display: flex;
+        position: absolute;
+        top: 49%;
+        left: 8%;
+        align-items: center;
+        gap: 10px;
+        list-style-type: none;
+}
+
+
+
+.btn {
+
+        position: absolute;
+        top: 58%;
+        left: 10%;
+        border-radius: 10px;
+        width: 15%;
+        height: 4%;
+        background-color: green;
+        font-size: 20px;
+        border-radius: 0, 5rem;
+        cursor: pointer;
+        transition: all 0, 3s;
+}
+
+.btn::after {
+
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: darkgray;
+        border-radius: inherit;
+        translate: 6px 6px;
+        transition: 0, 25s;
+        z-index: -1;
+
+}
+
+.btn:hover::after {
+        translate: 0;
+}
+
+.btn:hover {
+        background-color: white;
+        color: grey;
+
+}
